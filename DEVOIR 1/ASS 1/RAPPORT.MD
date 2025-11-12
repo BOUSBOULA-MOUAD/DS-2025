@@ -81,3 +81,64 @@ Ce jeu de données présente un intérêt **pédagogique et scientifique majeur*
 ## 🔷 Conclusion
 Le jeu de données **Challenger O-Ring** illustre parfaitement le rôle essentiel de l’analyse statistique dans la **prévention des risques technologiques**.  
 Son étude met en lumière la nécessité d’intégrer des approches de **fiabilité et de prédiction** dans la conception et l’exploitation des systèmes complexes, en particulier dans le domaine **aérospatial**.
+
+
+# 🚀 Analyse du jeu de données : Challenger USA Space Shuttle O-Ring
+
+## 📘 1. Introduction
+
+Ce projet étudie la relation entre la **température de lancement** et les **défaillances des joints d’étanchéité (O-Rings)** du propulseur de la navette spatiale **Challenger**, dont l’explosion en 1986 fut causée par une défaillance mécanique liée au froid.
+
+L’objectif est de montrer, par une analyse statistique et visuelle, comment la **baisse de température augmente le risque de défaillance**, et d’illustrer la nécessité d’une approche de fiabilité dans l’ingénierie aérospatiale.
+
+---
+
+## 🎯 2. Objectif du projet
+
+- Analyser les **facteurs influençant les défaillances** des O-Rings.  
+- Établir une **corrélation entre la température de lancement et les défaillances**.  
+- Créer un **modèle prédictif** simple permettant d’estimer le risque à basse température.  
+- Mettre en évidence l’importance de l’analyse des données dans la **prise de décision technique**.
+
+---
+
+## 🧩 3. Description du jeu de données
+
+### Source  
+- **Origine :** UCI Machine Learning Repository  
+- **Lien :** [https://archive.ics.uci.edu/dataset/92/challenger+usa+space+shuttle+o+ring](https://archive.ics.uci.edu/dataset/92/challenger+usa+space+shuttle+o+ring)
+- **Licence :** Creative Commons Attribution 4.0 (CC BY)
+
+### Structure des données  
+Le dataset comprend **23 observations** issues de vols précédents de la navette spatiale avant la catastrophe du Challenger.
+
+| Variable | Description | Type |
+|-----------|--------------|------|
+| `Temperature` | Température de lancement (°F) | Numérique |
+| `Failures` | Nombre de défaillances observées sur les O-Rings | Numérique |
+
+---
+
+## 📊 4. Exploration et statistiques descriptives
+
+| Mesure | Température (°F) | Défaillances |
+|---------|------------------|--------------|
+| Moyenne | ≈ 69.57 | - |
+| Médiane | ≈ 70.00 | - |
+| Écart-type | ≈ 8.36 | - |
+| Minimum | 53 °F | 0 |
+| Maximum | 81 °F | 2 |
+
+Les données montrent une **forte variabilité** de la température, mais très peu de défaillances sauf lors des lancements à basse température.
+
+---
+
+## 📉 5. Visualisation
+
+### 🔹 Corrélation entre température et défaillance
+Le graphique de dispersion (`Temperature` vs `Failures`) montre clairement une **corrélation négative** :  
+> ➡️ plus la température diminue, plus le nombre de défaillances augmente.
+
+```python
+sns.scatterplot(x="Temperature", y="Failures", data=df, color="red")
+plt.title("Température vs Défaillances des O-Rings")
