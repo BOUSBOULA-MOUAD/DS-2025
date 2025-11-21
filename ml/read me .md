@@ -1,5 +1,5 @@
 **NOM** : BOUSBOULA MOUAD  
-
+Advanced Paste includes several text-based paste options. You find these options in the **Advanced Paste** window. Open the window by using the activation shortcut. You can also use customizable keyboard commands to directly invoke a paste action with quick keys.
 # Compte Rendu - Classification de la Qualité du Vin avec K-NN
 
 ## 1. Description du Projet
