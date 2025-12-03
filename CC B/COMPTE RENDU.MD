@@ -4,7 +4,7 @@
 
 **Projet : Online Shoppers Purchasing Intention**
 **Thématique : Marketing & Commerce**
-**Auteur :** [Ton nom] — **Date :** [Date]
+
 
 ---
 
