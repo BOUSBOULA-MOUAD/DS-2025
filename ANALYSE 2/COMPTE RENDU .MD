@@ -1,5 +1,5 @@
-# 📘 PROJET DATA SCIENCE  
-## Analyse et Prédiction de la Performance Sportive
+# 📘 Analyse et Prédiction de la Performance Sportive
+
 
 ---
 
